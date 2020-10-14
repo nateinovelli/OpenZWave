@@ -81,6 +81,13 @@ Please Note: If this doesn't work, you can check to see if your switch is within
       Default: 0
       </Help>
     </Value>
+    <Value genre="config" type="list" size="1" index="13" label="Load Type" min="0" max="1" value="0">
+       <Help>
+          Can be used in certain 3-way dumb switch setups where the load is confusing the switch as to which state it should be in.
+       </Help>
+       <Item value="0" label="Detect Load Type"/>
+       <Item value="1" label="Manually set for special load type"/>
+    </Value>
     <Value genre="config" type="list" size="1" index="51" label="Instant On" min="0" max="1" value="1">
        <Help>
           Enables instant on (ie: disables the 700ms button delay). Note, if you disable the delay, it will also disable scene control except for Button 1 (ie: tap up 1x or tap down 1x) and button 7 (config button). All other buttons (2-6) will be disabled.
